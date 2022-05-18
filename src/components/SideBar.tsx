@@ -1,15 +1,9 @@
 import { useEffect, useState } from "react";
 import { api } from "../services/api";
 import { Button } from "./Button";
+import { GenreResponseProps } from "../models/MovieModels";
 
 import '../styles/sidebar.scss'
-
-interface GenreResponseProps {
-  id: number;
-  name: 'action' | 'comedy' | 'documentary' | 'drama' | 'horror' | 'family';
-  title: string;
-}
-
 interface SidebarProps {
   selectedGenreId: number,
   setSelectedGenreId: (id: number) => void

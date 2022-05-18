@@ -1,13 +1,9 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 import { SideBar } from './components/SideBar';
 import { Content } from './components/Content';
 
-import { api } from './services/api';
-
 import './styles/global.scss';
-
-import './styles/content.scss';
 
 export function App() {
   const [selectedGenreId, setSelectedGenreId] = useState(1);  
